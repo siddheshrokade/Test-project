@@ -33,7 +33,7 @@ jobs:
     
     # Set PYTHONPATH to include src directory
     - name: Set PYTHONPATH
-      run: echo "PYTHONPATH=$(pwd)/src" >> $GITHUB_ENV
+      run: echo "PYTHONPATH=$(pwd)/simple_pytest_project/src" >> $GITHUB_ENV
     
     # Run tests with pytest
     - name: Run tests with pytest
