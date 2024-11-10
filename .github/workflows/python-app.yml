@@ -31,6 +31,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r simple_pytest_project/requirements.txt
     
+    # Set PYTHONPATH to include src directory
+    - name: Set PYTHONPATH
+      run: echo "PYTHONPATH=$(pwd)/src" >> $GITHUB_ENV
+    
     # Run tests with pytest
     - name: Run tests with pytest
       run: |
