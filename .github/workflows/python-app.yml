@@ -33,5 +33,5 @@ jobs:
     
     - name: Run tests with pytest
       run: |
-        export PYTHONPATH=$(pwd)/simple_pytest_project/tests
-        pytest simple_pytest_project/tests
+        export PYTHONPATH=$(pwd)/simple_pytest_project/src
+        pytest simple_pytest_project/src/tests
